@@ -4,7 +4,7 @@ const registerLink = document.querySelector('.register-link');
 const forgotLink = document.querySelector('.forgot-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
-const forgotPasswordForm = document.getElementById('forgot-password-form');
+const forgotPasswordForm = document.getElementById('form');
 
 registerLink.addEventListener('click', () => {
     wrapper.classList.add('active');
@@ -30,9 +30,21 @@ iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-forgot');
 });
 
-forgotPasswordForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Please check your mail to reset your password');
-    wrapper.classList.remove('active-forgot');
-    wrapper.classList.add('active');
+forgotPasswordForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const btn = document.getElementById('button');
+    btn.value = 'Sending...';
+    const serviceID = 'service_7nvdplr'; // Replace with your EmailJS service ID
+    const templateID = 'template_uz5v4ok'; // Replace with your EmailJS template ID
+
+    emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+        btn.value = 'Send Email';
+        alert('Please check your mail to reset your password.');
+        wrapper.classList.remove('active-forgot');
+        wrapper.classList.add('active');
+    }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+    });
 });
