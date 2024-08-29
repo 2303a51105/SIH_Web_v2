@@ -35,7 +35,7 @@ forgotPasswordForm.addEventListener('submit', function(event) {
     const btn = document.getElementById('button');
     btn.value = 'Sending...';
     const serviceID = 'service_7nvdplr'; // Replace with your EmailJS service ID
-    const templateID = 'template_yy6cjxj'; // Replace with your EmailJS template ID
+    const templateID = 'template_vs350q7'; // Replace with your EmailJS template ID
 
     emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
