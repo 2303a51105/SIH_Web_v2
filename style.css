@@ -111,6 +111,7 @@ body{
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
+    color: #fff; /* Set text color to white */
 }
 
 .wrapper .form-box.login{
@@ -153,7 +154,7 @@ body{
 
 .form-box h2{
     font-size: 2em;
-    color: #162938;
+    color: #fff; /* Set heading color to white */
     text-align: center;
 }
 
@@ -161,7 +162,7 @@ body{
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #162938;
+    border-bottom: 2px solid #fff; /* Set border color to white */
     margin: 30px 0;
 }
 
@@ -171,7 +172,7 @@ body{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #162938;
+    color: #fff; /* Set label color to white */
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -190,7 +191,7 @@ body{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #162938;
+    color: #fff; /* Set input text color to white */
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -199,13 +200,13 @@ body{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #162938;
+    color: #fff; /* Set icon color to white */
     line-height: 57px;
 }
 
 .remember-forgot{
     font-size: .9em;
-    color: #162938;
+    color: #fff; /* Set text color to white */
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -213,12 +214,12 @@ body{
 }
 
 .remember-forgot label input{
-    accent-color: #162938;
+    accent-color: #fff; /* Set checkbox color to white */
     margin-right: 5px;
 }
 
 .remember-forgot a{
-    color: #162938;
+    color: #fff; /* Set link color to white */
     text-decoration: none;
 }
 
@@ -229,26 +230,26 @@ body{
 .btn{
     width: 100%;
     height: 45px;
-    background: #162938;
+    background: #fff;
     border: none;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1em;
-    color: #fff;
+    color: #162938;
     font-weight: 500;
 }
 
 .login-register{
     font-size: .9em;
-    color: #162938;
+    color: #fff; /* Set text color to white */
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a{
-    color: #162938;
+    color: #fff; /* Set link color to white */
     text-decoration: none;
     font-weight: 600;
 }
